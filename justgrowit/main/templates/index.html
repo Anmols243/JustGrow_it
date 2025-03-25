@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Just Grow It</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+</head>
+
+<body>
+
+  <!-- Move to top button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <!-- Background video -->
+  <video autoplay loop muted playsinline class="background-clip">
+    <source src="{% static '/images/firstpage.mp4' %}" type="video/mp4">
+</video>
+
+
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">Just Grow It</a>
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#talents">Talents</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="container">
+      <div class="content">
+        <h1>MARKETING IS NOT</h1>
+        <h2>JUST PROMOTING</h2>
+      </div>
+    </div>
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one"></div>
+        <div class="text-two"></div>
+        <div class="text-three"></div>
+        <div class="text-four"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Us</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="{% static '/images/about 2.png' %}" alt="About Us Image">
+        </div>
+        <div class="right">
+          <div class="topic">Your Growth Partners</div>
+          <p>
+            At Just Grow It, we don’t just market — we elevate your brand to new heights.
+            As a full-service marketing agency, we specialize in crafting tailored strategies that drive real,
+            measurable results.
+            We believe in the power of storytelling, the science of data, and the art of marketing.
+          </p>
+          <p><span class="highlight-shadow">Let us help you unlock your brand’s full potential and achieve the growth you deserve.</span></p>
+          <div class="button">
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talents Section -->
+  <section class="talents" id="talents">
+    <div class="content">
+      <div class="title"><span>Talents</span></div>
+      <div class="talents-details">
+        <div class="text">
+          <div class="topic">Skills Reflect Our Knowledge</div>
+          <p>
+            Our team is a blend of creatives, strategists, and tech-savvy marketers. From gaming influencers to lifestyle experts, we connect talent with opportunity.
+          </p>
+          <div class="experience">
+            <div class="num">10</div>
+            <div class="exp">
+              Years Of <br> Experience
+            </div>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">GAMERS</div>
+            <div class="per">eSports, Game Streamers</div>
+          </div>
+          <div class="box">
+            <div class="topic">LIFESTYLE</div>
+            <div class="per">Fitness, Fashion, Wellness</div>
+          </div>
+          <div class="box">
+            <div class="topic">BUSINESS</div>
+            <div class="per">Entrepreneurs, Coaches</div>
+          </div>
+          <div class="box">
+            <div class="topic">CREATORS</div>
+            <div class="per">Content, Art, Music</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>Our Services</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon"><i class="fas fa-desktop"></i></div>
+          <div class="topic">Influencer Marketing</div>
+          <p>We connect your brand with the right voices that drive engagement and results.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-paint-brush"></i></div>
+          <div class="topic">Creative Design</div>
+          <p>From logos to campaigns, our design team turns ideas into stunning visuals.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <div class="topic">Growth Planning</div>
+          <p>We develop scalable strategies to fuel long-term business growth.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fab fa-android"></i></div>
+          <div class="topic">App Marketing</div>
+          <p>Maximize installs, engagement, and retention through optimized app marketing.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-camera-retro"></i></div>
+          <div class="topic">Content Production</div>
+          <p>We craft high-quality photos, videos, and short-form content for all platforms.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-tablet-alt"></i></div>
+          <div class="topic">Digital Campaigns</div>
+          <p>Targeted campaigns across social, search, and display networks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Us</span></div>
+      <div class="text">
+        <div class="topic">Have Any Project?</div>
+        <p>
+          Let’s work together to bring your ideas to life. Whether it's a campaign, collaboration, or consultation — we’re here to help.
+        </p>
+        <div class="button">
+          <button>Let's Connect</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="text">
+      <span>&copy; 2025 Just Grow It. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
